@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.leaflet-container {
+    margin: 0 auto;
+    height: calc(100vh - 18.75rem);
+    z-index: 0;
+    overflow: hidden;
+}
+
+@media (min-width:768px) {
+  .leaflet-container {
+    height: calc(100vh - 17.5rem);
+  }
+}

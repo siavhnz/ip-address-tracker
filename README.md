@@ -55,6 +55,7 @@ Users should be able to:
 
 - [React](https://react.dev/)
 - [TailwindCss](https://tailwindcss.com/)
+- [Framer Motion](https://framer.com/motion)
 - [Ipify](https://geo.ipify.org/)
 - [Leafletjs](https://leafletjs.com/)
 

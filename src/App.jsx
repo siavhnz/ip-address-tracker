@@ -1,5 +1,11 @@
+import IPTracker from "./components/IPTracker/IPTracker";
+
 function App() {
-  return <> IP Address Tracker</>;
+  return (
+    <>
+      <IPTracker />
+    </>
+  );
 }
 
 export default App;
