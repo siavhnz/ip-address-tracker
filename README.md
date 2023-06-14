@@ -27,13 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](?)
+![screenshot](./screenshot/screenshot.png)
 
 ### Links
 
-- Solution: [frontendmentor.io](https://www.frontendmentor.io/solutions/?)
+- Solution: [frontendmentor.io](https://www.frontendmentor.io/solutions/ip-address-tracker-VQpPRsP-yI)
 
-- Live Site: [cloudflare](https://?.pages.dev/)
+- Live Site: [cloudflare](https://ip-address-tracker-2tz.pages.dev/)
 
 ## My process
 
@@ -46,7 +46,7 @@ Users should be able to:
 
 ### Work Time
 
-- [My Clockify Report](https://app.clockify.me/shared/?)
+- [My Clockify Report](https://app.clockify.me/shared/6489a79b55f8f12dcf0c74ea)
 
 ### Built with
 
