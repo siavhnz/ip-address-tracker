@@ -34,11 +34,7 @@ const IPInput = forwardRef((props, ref) => {
           className="px-6 h-[3.75rem] rounded-l-xl md:rounded-l-2xl outline-none flex-grow font-rubik font-medium text-[1.08rem] placeholder:text-dark-gray placeholder:text-xs placeholder:font-normal md:placeholder:text-lg md:text-lg"
         />
         {props.isLoading && (
-          <div
-            type="submit"
-            aria-label="wait for data"
-            className="w-14 bg-black hover:bg-very-dark-gray transition-all duration-700 flex justify-center items-center rounded-r-xl md:rounded-r-2xl"
-          >
+          <div className="w-14 bg-black hover:bg-very-dark-gray transition-all duration-700 flex justify-center items-center rounded-r-xl md:rounded-r-2xl">
             <IconContext.Provider
               value={{ className: "text-white animate-spin" }}
             >

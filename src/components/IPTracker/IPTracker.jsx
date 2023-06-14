@@ -85,7 +85,7 @@ const IPTracker = () => {
   };
 
   return (
-    <div>
+    <main>
       <div className="relative">
         <div className="bg-pattern-mobile md:bg-pattern-desktop bg-no-repeat bg-cover h-[18.75rem] md:h-[17.5rem]" />
         <div className="flex flex-col absolute top-0 w-full z-10">
@@ -109,7 +109,7 @@ const IPTracker = () => {
           error={state.error.hasError}
         />
       </div>
-    </div>
+    </main>
   );
 };
 
