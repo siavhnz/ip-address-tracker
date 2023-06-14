@@ -1,22 +1,23 @@
 import { forwardRef, useState } from "react";
 import { ReactComponent as Arrow } from "../../assets/images/icon-arrow.svg";
 import { motion } from "framer-motion";
-import ipRegex from "ip-regex";
 import { BiLoaderAlt } from "react-icons/bi";
 import { IconContext } from "react-icons";
+import { validateUserInput } from "../../lib/utils";
 
 const IPInput = forwardRef((props, ref) => {
   const [error, setError] = useState();
 
   const handleInput = (e) => {
     e.preventDefault();
-    const ip = ref.current.value;
+    const userValue = ref.current.value;
+    const validateResult = validateUserInput(userValue);
 
-    if (!ip || !ipRegex({ exact: true }).test(ip)) {
+    if (validateResult === "error") {
       setError(true);
     } else {
       setError(false);
-      props.loadIPInfo(ip);
+      props.loadIPInfo(validateResult, userValue);
     }
   };
 
@@ -61,7 +62,13 @@ const IPInput = forwardRef((props, ref) => {
           animate={{ height: "auto", opacity: 1 }}
         >
           <p className="text-red-800 text-sm font-rubik pt-3">
-            Please enter a valid IP
+            Please enter a valid IP or Domain
+          </p>
+          <p className="text-green-300 text-sm font-rubik pt-3">
+            Domain: geo.ipify.org (without http[s]://)
+          </p>
+          <p className="text-green-300 text-sm font-rubik pt-3">
+            IP: 64.140.160.2
           </p>
         </motion.div>
       )}

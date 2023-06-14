@@ -21,10 +21,10 @@ const IPTracker = () => {
   });
 
   useEffect(() => {
-    loadIPInfo("");
+    loadIPInfo("current", "");
   }, []);
 
-  const loadIPInfo = (ip) => {
+  const loadIPInfo = (type, value) => {
     setState((prevState) => {
       return {
         ...prevState,
@@ -35,12 +35,15 @@ const IPTracker = () => {
         },
       };
     });
-    fetch(apiUrl(ip))
+    fetch(apiUrl(type, value))
       .then((response) => {
         if (response.ok) {
           return response.json();
+        } else if (response.status === 400) {
+          throw new Error("Not Found");
+        } else {
+          throw new Error("Free Api has Expired");
         }
-        throw new Error("Something went wrong");
       })
       .then((responseJson) => {
         const location =
@@ -74,7 +77,7 @@ const IPTracker = () => {
             loading: false,
             error: {
               hasError: true,
-              message: error,
+              message: error.message,
             },
           };
         });

@@ -11,9 +11,6 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 - [My process](#my-process)
   - [Work time](#work-time)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
@@ -58,12 +55,7 @@ Users should be able to:
 - [Framer Motion](https://framer.com/motion)
 - [Ipify](https://geo.ipify.org/)
 - [Leafletjs](https://leafletjs.com/)
-
-### What I learned
-
-### Continued development
-
-### Useful resources
+- [IP Regex](https://github.com/sindresorhus/ip-regex)
 
 ## Author
 
